@@ -1,3 +1,7 @@
+// rfce = criação de componente
+// rafce = criação de componente
+
+
 import './App.css'
 import Body from './components/Body/Body'
 import DemoUm from './components/DemoUm/DemoUm'
