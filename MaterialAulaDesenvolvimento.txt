@@ -1,0 +1,35 @@
+Controle de Estoque{
+
+-produto
+-quantidade
+-validade
+-relatorio de produto
+
+
+
+   **produto**
+.CODIGO DE BARRAS
+.NOME
+.COR
+.FABRICANTE
+.MODELO
+
+   ** quantidade **
+.MINIMO 
+.MÁXIMO
+.CAPACIDADE DE ARMAZENAMENTO
+
+       ** validade **
+.CONTROLE DE VALIDADE DE ENTRADA
+.VALIDADE QUE ESTÁ NO ARMAZENAMENTO
+.CONTROLE DE LOTE
+
+
+   ** relatorio 
+de produto ** 
+.PRODUTOS QUE TEM NO ESTOQUE GERAL
+.CONTROLE DE ARMAZENAMENTO
+
+
+
+}
