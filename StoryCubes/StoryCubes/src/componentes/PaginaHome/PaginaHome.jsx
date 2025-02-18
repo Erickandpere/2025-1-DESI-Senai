@@ -1,42 +1,39 @@
 import './PaginaHome.css'
 import { useState } from "react";
 
-
-const numerosComImagens = [
-  { imagem: "noto--airplane.svg" },
-  { imagem: "noto--alarm-clock.svg" },
-  { imagem: "noto--baby.svg" },
-  {  imagem: "noto--balloon.svg" },
-  {  imagem: "noto--blue-heart.svg" },
-  { imagem: "noto--bat.svg" },
-  {  imagem: "noto--bison.svg" },
-  {  imagem: "noto--briefcase.svg" },
-  {  imagem: "noto--axe.svg" },
-  { imagem: "noto--bread.svg" },
-];
-
- function PaginaHome() {
+function PaginaHome() {
   const [sorteado, setSorteado] = useState();
 
   const realizarSorteio = () => {
-    const itemSorteado = numerosComImagens[Math.floor(Math.random() * numerosComImagens.length)];
+    const itens = ["🎃", "❤️", "🌟", "🍀", "🎉", "🌈", "⭐", "💥", "🔥", "🌙", "🌼", "🌻", 
+      "🌸", "💫", "🍎", "🍓", "🍒", "🍉", "🍍", "🍑", "🍌", "🍒", "🍪", "🍩", 
+      "🍫", "🍭", "🍬", "🍪", "🧁", "🎂", "🍰", "🍮", "🍷", "🍸", "🍺", "🥂", 
+      "🥤", "🍿", "🥨", "🍿", "🌶️", "🍔", "🍟", "🍕", "🌮", "🍣", "🍜", "🍛", 
+      "🍤", "🥗", "🍱", "🍲", "🥘", "🥑", "🍗", "🥩", "🍖", "🍣", "🥨", "🍙", 
+      "🍚", "🍇", "🍉", "🍓", "🍊", "🍍", "🥭", "🍈", "🍑", "🍒", "🍋", "🍌", 
+      "🍊", "🍍", "🍒", "🍓", "🍈", "🍑", "🍆", "🥒", "🥕", "🌽", "🍄", "🍑", 
+      "🥭", "🍅", "🥝", "🍓", "🍆", "🍔", "🍟", "🍗", "🥪", "🌯", "🌮", "🍣",
+      "🍤", "🍛", "🍜", "🥘", "🍝", "🍤", "🍣", "🍱", "🥗", "🍲", "🍿", "🍫"];
+    const itemSorteado = itens[Math.floor(Math.random() * itens.length)];
     setSorteado(itemSorteado);
   };
 
   return (
     <div className='Pagina'>
+      <h1>Use sua Imaginação</h1>
+      <p>Crie sua Propria História</p>
+
       <button
         onClick={realizarSorteio}
-            className="Botao"> Sortear Imagens</button>
+        className="Botao"> Clique para Sortear</button>
 
       {sorteado && (
         <div>
-        <img src={sorteado.imagem} />
-       
+          <span style={{fontSize:200}}>{sorteado}</span>
         </div>
       )}
     </div>
   );
 }
 
-export default PaginaHome
+export default PaginaHome;
