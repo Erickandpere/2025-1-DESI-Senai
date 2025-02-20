@@ -5,6 +5,7 @@
     gap: 15px;
     align-items: center;
     height: 100vh;
+    font-weight: bold;
  }
 .Botao{
     border-radius: 8px;
@@ -16,6 +17,7 @@
     background-color: #c0baba;
     cursor: pointer;
     transition: border-color 0.25s;
+    font-weight: bold;
  }
 
  
